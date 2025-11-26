@@ -1,0 +1,123 @@
+/* ---- Layout general ---- */
+body {
+  background: linear-gradient(135deg, #181818, #232323);
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* ---- Tabs ---- */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tab {
+  padding: 10px 22px;
+  border-radius: 12px;
+  background: #333;
+  border: 1px solid #555;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-size: 1rem;
+}
+
+.tab:hover {
+  background: #444;
+}
+
+.tab.active {
+  background: #4c6fff;
+  border-color: #6f8dff;
+}
+
+/* ---- Card glassmorphism ---- */
+.card-modern {
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ---- Form ---- */
+.form-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select {
+  background: #1f1f1f;
+  border: 1px solid #444;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.95rem;
+}
+
+input:focus, select:focus {
+  border-color: #6f8dff;
+  outline: none;
+}
+
+/* ---- Botón ---- */
+.btn-modern {
+  padding: 12px;
+  background: #4c6fff;
+  border-radius: 12px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-modern:hover {
+  background: #6f8dff;
+}
+
+/* ---- Grid ---- */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* ---- Tabla ---- */
+.table-modern {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.table-modern th, .table-modern td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table-modern th {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.empty {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
